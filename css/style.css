@@ -3021,4 +3021,116 @@ span.error-text{
 			font-size: 23px;
 		}
 	}
-  /*box-shadow: 0px 3px 5px 2px #ababab;*/
+  /* Shereen Edit */
+
+ 
+ .scroll{
+	padding-left: 15px;
+	direction: rtl;
+ }
+ .scroll::-webkit-scrollbar {
+	 width: 5px;
+ }
+ 
+ .scroll::-webkit-scrollbar-track {
+	 -webkit-box-shadow: inset 0 0 10px #ac1f2d; 
+	 border-radius: 10px;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb {
+	 border-radius: 10px;
+	 -webkit-box-shadow: inset 0 0 10px #ac1f2d; 
+ }
+
+ .specific-item{
+	 margin-top: 20px;
+	 padding-bottom: 10px;
+	
+ }
+
+
+
+ .specific-item .item-details{
+	padding-bottom: 0px !important;
+ }
+
+ .specific-item article{
+	 height: 62px !important;
+ }
+
+ .specific-item a{
+	 color: #AC1F2D;
+	 font-size: 18px;
+	 font-weight: bold;
+ }
+
+ @media (max-width:540px) {
+	.scroll::-webkit-scrollbar {
+		display: none;
+	}
+ }
+
+ b.ipharmacy{
+	 text-transform: none;
+ }
+ input[type='date']#date-of-birth{
+	 height: 42px;
+ }
+
+ .FRANCHISE{
+	 margin-top: 20%;
+	 float: right;
+ }
+ .FRANCHISE h3 , .FRANCHISE h4{
+	 margin-bottom: 12px;
+	 font-weight: bold;
+ }
+ .FRANCHISE a{
+	 font-size: 17px;
+ }
+
+
+ fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.scheduler-border {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
+
+	fieldset legend{
+		color: #AC1F2D;
+	}
+	fieldset .row{
+		margin-top: 20px;
+	}
+
+	fieldset input{
+		width: 100%;
+	}
+
+	fieldset label{
+		padding-top: 5px;
+	}
+
+	fieldset .row.form-btn{
+		display: flex;
+		justify-content: center;
+	}
+
+	#myRadioGroup input[type="radio"]:checked+label
+	{ font-weight: bold; font-size: 25px; color: #AC1F2D;} 
+	#myRadioGroup input[type="radio"]+label{
+		font-size: 20px;
+		transition: 0.9s;
+	}
+	
