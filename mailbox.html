@@ -1,0 +1,667 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mailbox</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/fav-icon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+   	    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+        <!--fontAwesome-->
+       <script src="https://kit.fontawesome.com/2e646d6873.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--Header in Mobile-->
+        <div class="header-mobile">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xs-2" onclick="openNav()" style="cursor: pointer;">
+                        <svg fill="#AC1F2D"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; margin-bottom: 5px;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5
+                                        c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021
+                                        C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333
+                                        s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+                                </g>
+                            </g>
+
+                        </svg>
+                    </div>
+                    
+                    <div class="col-xs-8">
+                    	<div class="logo">
+                          <a href="index.html"><img src="img/logo.png" alt=""/></a>
+                        </div><!--logo-->
+                    </div><!--col-->
+
+                    <div class="col-xs-2" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">          	
+                        <svg fill="#AC1F2D" id="Layer_1" enable-background="new 0 0 512 512" height="30" viewBox="0 0 512 512" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/><path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/><path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/></svg>
+                    </div><!--col-->
+                    
+
+                </div>
+
+            <!-- mobile menu -->
+                <div class="row">        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                            <ul class="nav navbar-nav">
+                                <li class="iam iam-area">
+                                    <a href="#" class="iamlink">I AM <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    
+                                    <div class="iam-dropdown">
+                                        <div class="dropdown-iam">
+            
+                                            <div class="dropdown" style="display: flex;">
+                                                <p style="margin-top: 11%;">A Patient</p>
+                                                <div class="buttons">
+                                                    <a href="patient.html">
+                                                        <button>
+                                                            I Would Like to Transfer My Medications to iPharmacy
+                                                        </button>
+                                                    </a>
+            
+                                                    <a href="patient2.html">
+                                                        <button>
+                                                            I Would Like To Refill/Change My Prescription
+                                                        </button>
+                                                    </a>
+            
+                                                </div>
+                                            
+                                            </div>
+                                        <hr>
+            
+                                        <div class="dropdown" style="display: flex;">
+                                            <p>A Pharmacist <small>(Potential Owner)</small></p>
+                                            <div class="buttons">
+                                                <a href="mailto:ahmed.metwally@myipharmacy.ca">
+                                                    <button>
+                                                        I Would Like to Discuss a Business Opportunity
+                                                    </button>
+                                                </a>
+            
+                                            </div>
+                                        </div>
+                                        <hr>
+            
+                                        <div class="dropdown" style="display: flex;">
+                                            <p>A Health Care Professional</p>
+                                            <div class="buttons">
+                                                <a href="contact.html">
+                                                    <button>
+                                                        I Would Like Services For My Patients / Clinic
+                                                    </button>
+                                                </a>
+            
+                                            </div>
+                                        </div>
+                                        <hr>
+            
+                                        <div class="dropdown" style="display: flex;">
+                                            <p style="margin-top: 4%;">A Service Provider</p>
+                                            <div class="buttons">
+                                                <a href="mailto:ahmed@myipharmacy.ca">
+                                                    <button>
+                                                        I Would Like to Discuss a Business Opportunity
+                                                    </button>
+                                                </a>
+            
+                                            </div>
+                                        </div>
+                                        <hr>
+            
+                                        <div class="dropdown" style="display: flex;">
+                                            <p>A Pharmacy Owner/ An investor</p>
+                                            <div class="buttons">
+                                                <a href="mailto:ahmed@myipharmacy.ca">
+                                                    <button>
+                                                        I Would Like to Discuss a Business Opportunity
+                                                    </button>
+                                                </a>
+            
+                                            </div>
+                                        </div>
+                                        <hr>
+                                            
+                                        <div class="dropdown" style="display: flex;">
+                                            <p>An Intern - Technician</p>
+                                            <div class="buttons">
+                                                <a href="mailto:ahmed@myipharmacy.ca">
+                                                    <button>
+                                                        I Want to Be Part Of iPharmacy
+                                                    </button>
+                                                </a>
+            
+                                            </div>
+                                        </div>
+                                        
+            
+                                        </div><!--dropdown-iam-->
+                                    </div><!--iam-dropdown-->
+                            </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="certifications.html">Certifications</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media Gallery <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="gallery.html#pohto-gallery"><i class="fa fa-angle-right" aria-hidden="true"></i> Photo Gallery</a></li>
+                                <li><a href="gallery.html#featured-video"><i class="fa fa-angle-right" aria-hidden="true"></i> Featured Videos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="store.html">Store</a></li>        
+                            </ul>
+                        </div><!--navbar-collapse -->
+                </div>
+            <!-- Side Menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="millwoods.html">Millwoods
+                    <p><i class="fas fa-phone-alt"></i>780-757-3000</p>
+                </a>
+                <a href="chinatown.html">Chinatown
+                    <p><i class="fas fa-phone-alt"></i>780-756-4000</p>
+                </a>
+                <a href="downtown.html">Downtown
+                    <p><i class="fas fa-phone-alt"></i>780-758-3000</p>
+                </a>
+                <a href="Spruce Grove.html">Highway 16A
+                    <p><i class="fas fa-phone-alt"></i> 780-571-3000</p>
+                </a>
+                <a href="salvation.html">Salvation
+                    <p><i class="fas fa-phone-alt"></i>780-760-1000</p>
+                </a>
+            </div>
+
+
+            </div>
+        </div>
+        <!--End Header in Mobile-->
+
+
+        <header>
+        	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                    	<div class="logo">
+                          <a href="index.html"><img src="img/logo.png" alt=""/></a>
+                        </div><!--logo-->
+                    </div><!--col-->
+                    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+                    	<div class="row">
+                        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <a href="millwoods.html" class="header-contact-container">
+                                    <div class="header-contact">
+                                        <h3>Millwoods</h3>
+                                        <p><i class="fas fa-phone-alt"></i>780-757-3000</p>
+                                    </div><!--header-contact-->
+                                </a><!--href-->
+                            </div><!--col-->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <a href="chinatown.html" class="header-contact-container">
+                                    <div class="header-contact">
+                                        <h3>Chinatown</h3>
+                                        <p><i class="fas fa-phone-alt"></i>780-756-4000</p>
+                                    </div><!--header-contact-->
+                                </a><!--href-->
+                            </div><!--col-->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <a href="downtown.html" class="header-contact-container">
+                                    <div class="header-contact">
+                                        <h3>Downtown</h3>
+                                        <p><i class="fas fa-phone-alt"></i>780-758-3000</p>
+                                    </div><!--header-contact-->
+                                </a><!--href-->
+                            </div><!--col-->
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <a href="Spruce Grove.html" class="header-contact-container">
+                                    <div class="header-contact">
+                                        <h3>Highway 16A</h3><!--Spruce Grove -->
+                                        <p><i class="fas fa-phone-alt"></i> 780-571-3000</p>
+                                    </div><!--header-contact-->
+                                </a><!--href-->
+                            </div><!--col-->
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <a href="salvation.html" class="header-contact-container">
+                                    <div class="header-contact">
+                                        <h3>Salvation</h3>
+                                        <p><i class="fas fa-phone-alt"></i>780-760-1000</p>
+                                    </div><!--header-contact-->
+                                </a><!--href-->
+                            </div><!--col-->
+
+
+                        </div><!--row-->
+                    </div><!--col-->
+                </div><!--row-->
+            </div><!--container-->
+        </header> 
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="iam iam-area">
+                          <a href="#" class="iamlink">I AM <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                        
+                          <div class="iam-dropdown">
+                            <div class="dropdown-iam">
+  
+                                  <div class="dropdown" style="display: flex;">
+                                      <p style="margin-top: 11%;">A Patient</p>
+                                      <div class="buttons">
+                                          <a href="patient.html">
+                                              <button>
+                                                  I Would Like to Transfer My Medications to iPharmacy
+                                              </button>
+                                          </a>
+  
+                                          <a href="patient2.html">
+                                              <button>
+                                                  I Would Like To Refill/Change My Prescription
+                                              </button>
+                                          </a>
+  
+                                     </div>
+                                   
+                                </div>
+                              <hr>
+  
+                              <div class="dropdown" style="display: flex;">
+                                  <p>A Pharmacist <small>(Potential Owner)</small></p>
+                                  <div class="buttons">
+                                      <a href="mailto:ahmed.metwally@myipharmacy.ca">
+                                          <button>
+                                              I Would Like to Discuss a Business Opportunity
+                                          </button>
+                                      </a>
+  
+                                 </div>
+                              </div>
+                              <hr>
+  
+                              <div class="dropdown" style="display: flex;">
+                                  <p>A Health Care Professional</p>
+                                  <div class="buttons">
+                                      <a href="contact.html">
+                                          <button>
+                                              I Would Like Services For My Patients / Clinic
+                                          </button>
+                                     </a>
+  
+                                 </div>
+                              </div>
+                              <hr>
+  
+                              <div class="dropdown" style="display: flex;">
+                                  <p style="margin-top: 4%;">A Service Provider</p>
+                                  <div class="buttons">
+                                      <a href="mailto:ahmed@myipharmacy.ca">
+                                          <button>
+                                              I Would Like to Discuss a Business Opportunity
+                                          </button>
+                                      </a>
+  
+                                 </div>
+                              </div>
+                              <hr>
+  
+                              <div class="dropdown" style="display: flex;">
+                                  <p>A Pharmacy Owner/ An investor</p>
+                                  <div class="buttons">
+                                      <a href="mailto:ahmed@myipharmacy.ca">
+                                          <button>
+                                              I Would Like to Discuss a Business Opportunity
+                                          </button>
+                                      </a>
+  
+                                 </div>
+                              </div>
+                              <hr>
+                                  
+                              <div class="dropdown" style="display: flex;">
+                                  <p>An Intern - Technician</p>
+                                  <div class="buttons">
+                                      <a href="mailto:ahmed@myipharmacy.ca">
+                                          <button>
+                                              I Want to Be Part Of iPharmacy
+                                          </button>
+                                      </a>
+  
+                                 </div>
+                              </div>
+                              
+  
+                            </div><!--dropdown-iam-->
+                        </div><!--iam-dropdown-->
+                  </li>
+                </ul>
+               
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="services.html">SERVICES</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="certifications.html">Certifications</a></li>
+                   <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media Gallery <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="gallery.html#pohto-gallery"><i class="fa fa-angle-right" aria-hidden="true"></i> Photo Gallery</a></li>
+                      <li><a href="gallery.html#featured-video"><i class="fa fa-angle-right" aria-hidden="true"></i> Featured Videos</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="store.html">Store</a></li>        
+                </ul>
+              </div><!--navbar-collapse -->
+            </div><!--container -->
+          </nav>
+
+        <section class="title-inner">
+        	<div class="container">
+            	<div class="row">
+	            	<div class="col-md-4 col-xs-12">
+                    	<h2>Mailbox</h2>
+                    </div><!--col-->    
+                </div><!--row-->
+            </div><!--container-->
+        </section><!--title-inner-->
+        <main>
+        	<div class="container">
+               <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="item-area">
+                        <div class="item-img">
+                            <a href="request-refill.html"><img src="img/item.jpg" alt=""/></a>
+                        </div><!--item-img-->
+                        <div class="item-details overFlow">
+                            <article> Getting your prescriptions refilled is easy, friendly, and fast with iPharmacy. We have a blended system of high-tech and personal touch to meet the different needs of our patients.  </article>
+                        </div><!--item-details-->
+                        <a href="request-refill.html" class="item-link">Request A Refill</a>
+                    </div><!--item-area-->
+                    
+                    <div class="item-area blue-item">
+                        <div class="item-img">
+                            <a href="mailbox.html"><img src="img/item2.jpg" alt=""/></a>
+                        </div><!--item-img-->
+                        <div class="item-details">
+                            <h3>Free - 3 Years<br/> Mailbox Rental</h3>
+                            <p> Available in Chinatown and Downtown iPharmacy. Limited spots.  </p>
+                        </div><!--item-details-->
+                        <a  class="item-link" href="mailto:marketing.ipharmacy@gmail.com">Get MailBox</a>
+                    </div><!--item-area-->
+                </div><!--col-->
+<!--################## start get MailBox Modal ###########################-->
+<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <h2 class="modal-title" id="modalLabel">MailBox</h2>
+            </div>
+            <div class="modal-body">
+                <form  method="POST">
+
+                            
+                    <div class="row no-margin margin-bottom-15px">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="" name="name" class="name form-control"  id="name" value="" onkeyup="validate()"/>
+                        <span class="name-validation validation-error"></span>
+                    </div><!--row-->
+                    <div class="row no-margin margin-bottom-15px inputBox" id="inputBox">
+                        <label>Your Email</label>
+                        <input type="text" placeholder="" class="email form-control" id="email"  name="email" value="" onkeyup="validate()" onkeydown="catchError()" >
+                        <!--<span id="text" class="text"></span>-->
+                        <span class="email-validation validation-error"></span>
+                    </div><!--row-->
+                    <div class="row no-margin margin-bottom-15px ">
+                        <label>Your Phone</label>
+                        <input type="text" placeholder="" name="phone" id="phone" class="phone form-control" value="" onkeyup="validate()"/>
+                        <!--<span id="phoneText" class="text"></span>-->
+                        <span class="phone-validation validation-error"></span>
+
+                    </div><!--row-->
+                   
+                    <div class="row no-margin margin-bottom-15px ">
+                        <label>Choose Branch</label>
+                        <select class="phone form-control">
+                            <option>Downtown </option>
+                            <option>Chinatown</option>
+                        </select>
+                       
+
+                    </div><!--row-->
+
+                    <div class="row no-margin margin-bottom-15px">
+                        <button class="send-button" id="send-button" disabled>Save Changes</button>
+                    </div><!--row-->
+
+                </form>
+            </div>
+            <!--<div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+<!--################## End get MailBox Modal ###########################-->
+                   <div class="col-md-9 col-xs-12">
+                  		<div class="row margin-bottom-30px no-margin">
+                  			<div class="col-md-10 center-div">
+								<h1 class="title">Mailbox</h1>
+								<article class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</article> 
+								<div class="form-enquiry">
+									<form action="#">
+										
+									
+										
+										
+										<div class="row margin-bottom-15px">
+											<div class="col-md-6">
+												<label>Last Name</label>
+											    <input type="text" placeholder=""/>
+											</div><!--col-->
+											<div class="col-md-6">
+												<label>First Name</label>
+											    <input type="text" placeholder=""/>
+											</div><!--col-->
+										</div><!--row-->
+										<div class="row margin-bottom-15px">
+											<div class="col-md-6">
+												<label>Phone</label>
+											    <input type="text" placeholder=""/>
+											</div><!--col-->
+											<div class="col-md-6">
+												<label>Email</label>
+											    <input type="email" placeholder=""/>
+											</div><!--col-->
+										</div><!--row-->
+										
+										<div class="row margin-bottom-15px">
+											<div class="col-md-12">
+												<label>Date of birth</label>
+											    <input type="text" placeholder=""/>
+											</div><!--col-->
+										
+										</div><!--row -->
+										<div class="row no-margin margin-bottom-15px">
+											<label>Notes</label>
+											<textarea placeholder=""></textarea>
+										</div><!--row-->
+										<div class="row no-margin margin-bottom-15px">
+											<input type="checkbox"/>
+											<label>I agree on <a href="terms.html">Terms And Conditions</a></label>
+										</div><!--row-->
+										<div class="row no-margin margin-bottom-15px">
+											<button class="send-button">Send</button>
+										</div><!--row-->
+
+									</form>
+								</div><!--form-enquiry--> 
+							</div><!--col-->
+                  		</div><!--row-->
+                   	
+                   </div><!--col-->
+               </div><!--row-->
+            </div><!--container-->
+        </main>
+        
+        <footer>
+        	<div class="top-footer">
+            	<div class="container-fluid">
+                    <div class="row mb-5">
+                        <div class="col-sm-6 col-md-8 col-lg-4 col-xs-12">
+                            <h4 style="color: white; margin-bottom:10px">Subscribe in our News</h4>
+                            <form class="search-wrapper cf">
+                                <input type="text" placeholder="Enter your email..." required style="box-shadow: none">
+                                <button type="submit">Subscribe</button>
+                            </form> 
+
+                        </div>      
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="about.html" title="About"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>About</span></a></li>
+                                    <li><a href="services.html" title="Services"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>Services</span></a></li>
+                                    <li><a href="testimonials.html" title="Testimonials"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>Testimonials</span></a></li>
+                                    <li><a href="certifications.html" title="Certifications"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>Certifications</span></a></li>
+                                    <li><a href="media-gallery.html" title="Media Gallery"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>Media Gallery</span></a></li>
+                                    <li><a href="contact.html" title="Contact"><i class="fa fa-angle-right" aria-hidden="true"></i> <span>Contact</span></a></li>
+                                </ul>
+                            </div><!--footer-menu-->
+                        </div><!--col-->
+
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="logo-footer">
+                                        <a href="millwoods.html"><img src="img/white-logo.png" alt=""/></a>
+                                    </div><!--logo-footer-->
+                                    <div class="contact-area">
+                                        <h2><i class="fa fa-phone" aria-hidden="true"></i> 780-757-3000</h2>
+                                        <h4><i class="fa fa-fax" aria-hidden="true"></i> 780-575-3300</h4>
+                                        <h4><i class="fa fa-comment" aria-hidden="true"></i> 780-935-8200</h4>
+                                        <p>5808-19A Ave,<br/>Edmonton, AB T6L 1L8</p>
+                                    </div><!--contact-area-->
+                                </div><!--col-->
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="logo-footer">
+                                        <a href="downtown.html"><img src="img/white-logo2.png" alt=""/></a>
+                                    </div><!--logo-footer-->
+                                    <div class="contact-area">
+                                        <h2><i class="fa fa-phone" aria-hidden="true"></i> 780-758-3000</h2>
+                                        <h4><i class="fa fa-fax" aria-hidden="true"></i> 780-758-3300</h4>
+                                        <h4><i class="fa fa-comment" aria-hidden="true"></i> 780-935-8200</h4>
+                                        <p>10107 107 Ave,<br/>edmomnton , AB T5H 0V4</p>
+                                    </div><!--contact-area-->
+                                </div><!--col-->
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="logo-footer">
+                                        <a href="chinatown.html"><img src="img/white-logo3.png" alt=""/></a>
+                                    </div><!--logo-footer-->
+                                    <div class="contact-area">
+                                        <h2><i class="fa fa-phone" aria-hidden="true"></i> 780-756-4000</h2>
+                                        <h4><i class="fa fa-fax" aria-hidden="true"></i> 780-224-4000</h4>
+                                        <h4><i class="fa fa-comment" aria-hidden="true"></i> 780-935-8200</h4>
+                                        <p>9662 107A Ave,<br/>Edmonton, AB T5H 0Z7</p>
+                                    </div><!--contact-area-->
+                                </div><!--col-->
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="logo-footer">
+                                        <a href="Spruce Grove.html"><img src="img/white-logo3 copy.png" alt="" height="48px"/></a>
+                                    </div><!--logo-footer-->
+                                    <div class="contact-area">
+                                        <h2><i class="fa fa-phone" aria-hidden="true"></i> 780-571-3000</h2>
+                                        <h4><i class="fa fa-fax" aria-hidden="true"></i> 780-571-3100</h4>
+                                        <h4><i class="fa fa-comment" aria-hidden="true"></i> 780-935-8200</h4>
+                                        <p> 10-987A Ave,<br/>Edmonton, AB T5H 0Z7</p>
+                                    </div><!--contact-area-->
+                                </div><!--col-->
+
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="logo-footer">
+                                        <a href="salvation.html"><img src="img/salva-footer-logo.jpg" alt="" height="48px"/></a>
+                                    </div><!--logo-footer-->
+                                    <div class="contact-area">
+                                        <h2><i class="fa fa-phone" aria-hidden="true"></i> 780-760-1000</h2>
+                                        <h4><i class="fa fa-fax" aria-hidden="true"></i> 780-761-7300</h4>
+                                        <h4><i class="fa fa-comment" aria-hidden="true"></i> 780-935-8200</h4>
+                                        <p> 10570 96 St NW,<br/>Edmonton, AB T5H 2H8</p>
+                                    </div><!--contact-area-->
+                                </div><!--col-->
+                            </div>
+
+                        </div>
+                        
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--top-footer-->
+        	<div class="bottom-footer">
+            	<div class="container">
+                	<div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        	<div class="copy-right">
+                            	<span>© 2016 iPharmacy  |  Design by <a href="http://mophx.com/" target="_blank">mophx</a></span>
+                            </div><!--copy-right-->
+                        </div><!--col-->
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        	<div class="social">
+                            	<ul>
+                                    <li><a href=" https://www.facebook.com/myiPharmacy" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/myipharmacy/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/My_iPharmacy" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <!-- <li><a href="#" target="_blank"><i class="fa fa-rss"></i></a></li> -->
+                                    <li class="linktree"><a href="https://linktr.ee/myipharmacy"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="-23.044000000000004 -18.006999999999998 10828.765 2026.6576107229826" width="90" height="30"><path d="M2354.161 1301.182L1668.091 54.019c-39.63-72.025-143.129-72.025-182.749 0l-302.8 550.443 383.266 696.72a85.084 85.084 0 0 1 10.73 47.037c-3.122 46.472-45.124 87.316-102.054 87.34h.047c-.036 0-.061.011-.1.011h-124.07v475.586a88.843 88.843 0 0 0 88.844 88.844h275.032a88.843 88.843 0 0 0 88.843-88.843v-475.6h459.7c75.943.002 125.341-72.636 91.381-134.375z" /><path d="M879.734 54.02c-39.621-72.027-143.119-72.027-182.749 0L10.915 1301.183c-33.959 61.738 15.437 134.376 91.377 134.376H562v475.6A88.843 88.843 0 0 0 650.839 2000h275.032a88.843 88.843 0 0 0 88.843-88.843v-475.586H890.646c-.035 0-.062-.012-.1-.012h.047c-56.93-.023-98.932-40.868-102.054-87.34a85.079 85.079 0 0 1 10.729-47.036l383.267-696.72z"/></svg></a></li>
+                                    
+                                </ul>
+                            </div><!--social-->
+                        </div><!--col-->
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--bottom-footer-->
+        </footer>
+        <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+    	<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+		<script type="text/javascript" src="js/function_js.js"></script>
+        <script type="text/javascript" src="js/sideMenu.js"></script>
+        <script type="text/javascript" src="js/changeHeaderBackground.js"></script>
+    </body>
+</html>
