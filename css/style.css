@@ -3134,3 +3134,81 @@ span.error-text{
 		transition: 0.9s;
 	}
 	
+	@media (max-width:539px) {
+		#myRadioGroup input[type="radio"]:checked+label
+		{ font-weight: bold; font-size: 15px; color: #AC1F2D;} 
+		#myRadioGroup input[type="radio"]+label{
+			font-size: 13px;
+			transition: 0.9s;
+		}
+		.fieldset-row{
+			margin-top: 0!important;
+		}
+	}
+
+	@media (min-width:768px) and (max-width: 1024px){
+		.container {
+			width: 100%;
+		}}
+
+form .d-flex{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+form .d-flex input{
+	width: 9%;
+}
+
+form .d-flex-hr{
+	display: flex;
+	justify-content: center;
+}
+form .d-flex-hr hr{
+	border: 1px solid #AC1F2D;
+}
+
+.selected-row{
+	display: flex;
+	justify-content: center;
+	/* display: none; */
+}
+.selectedLocation{
+	background: #fff;
+    box-sizing: border-box;
+    padding: 10px 0 10px 32px;
+    border-radius: 6px;
+}
+
+.selectedLocation p.header{
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+form .medication{
+	border: 1px solid #AC1F2D;
+	padding: 10px 15px 14px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.image{
+	display: flex;
+	justify-content: center;
+}
+.social-feed{
+	border: 1px solid #868585;
+	width: 80%;
+	
+}
+
+.social-feed a{
+	display: block;
+	text-align: center;
+	font-size: 25px;
+}
+
+.social-feed a i:hover{
+	background-color: #fff;
+	color: gray;
+}
